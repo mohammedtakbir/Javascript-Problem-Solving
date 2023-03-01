@@ -128,6 +128,61 @@
 //     result.innerText = `${celsius} Celsius = ${fahrenheit.toFixed(2)} Fahrenheit`;
 // }
 
+//* problem-13
+//? Check if a number is Positive, Negative, or zero.
+
+//? using Math.sign()
+// function checkNumber(num) {
+//     const result = Math.sign(num);
+//     if (result === 1) {
+//         return 'Positive Number';
+//     } else if (result === -1) {
+//         return 'Negative Number';
+//     } else if (result === 0) {
+//         return 'Positive 0';
+//     } else if (result === -0) {
+//         return 'Negative -0';
+//     }else{
+//         return 'Not a Number';
+//     }
+// }
+// const res = checkNumber('fewew');
+// console.log(res);
+
+//? using user defined function
+// function checkNumber(num) {
+//     if (num > 0) {
+//         return 'Positive Number';
+//     } else if (num < 0) {
+//         return 'Negative Number';
+//     } else if (typeof num !== 'number') {
+//         return 'Invalid Number'
+//     }else if(num === 0){
+//         return 'Zero'
+//     }
+// }
+// const res = checkNumber(-587);
+// console.log(res);
+
+//* Problem-14
+//? Generate a random number
+
+function generateRandomNumber() {
+    const randomNumbers = Math.round(Math.random() * 1000000000);
+    const randomString = randomNumbers + '';
+    if (randomString.length === 9) {
+        return randomNumbers;
+    } else {
+        return generateRandomNumber();
+    }
+}
+
+function displayRandomNumber() {
+    const numbers = generateRandomNumber();
+    const randomField = document.getElementById('random-number');
+    randomField.innerText = '017'+numbers;
+}
+
 
 
 
