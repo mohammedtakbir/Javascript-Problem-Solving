@@ -96,7 +96,37 @@
 // [b, a] = [a, b];
 // console.log(a, b)
 
+//* problem-11
+//? Kilometers to Miles
 
+// function converter(km) {
+//     return km * 0.621371;
+// }
+
+// document.getElementById('convert-btn').addEventListener('click', () => {
+//     const inputField = document.getElementById('input-filed');
+//     const kilometers = inputField.value;
+//     const result = document.getElementById('result');
+
+//     const miles = converter(kilometers);
+//     result.innerText = `${kilometers} Kilometers = ${parseFloat(miles.toFixed(4))} Miles`;
+
+// })
+
+//* problem-12
+//? Celsius to Fahrenheit
+// function converter(celsius) {
+//     return (celsius * 1.8) + 32
+// }
+
+// function celsiusToFahrenheit() {
+//     const inputField = document.getElementById('input-field');
+//     const celsius = inputField.value;
+//     const fahrenheit = converter(celsius);
+
+//     const result = document.getElementById('result');
+//     result.innerText = `${celsius} Celsius = ${fahrenheit.toFixed(2)} Fahrenheit`;
+// }
 
 
 
