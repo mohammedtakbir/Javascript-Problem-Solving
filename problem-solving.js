@@ -22,17 +22,17 @@
 
 //* problem-03
 //? what is the output?
-// let num = 4;
+// var num = 4;
 // function outer(){
-//     let num = 2;
+//     var num = 2;
 //     function inner(){
 //         num++;
-//         let num = 5;
+//         var num = 5;
 //         console.log(num);
 //     };
-//     inner()
+//     inner();
 // }
-// outer()
+// outer();
 
 //* problem-04
 //? What is the output?
@@ -53,3 +53,71 @@
 // const identity = hero.getSecretIdentity.bind(hero);
 // console.log(identity())
 // console.log(hero.getSecretIdentity())
+
+//* problem-06
+//? add two numbers dynamically using prompt
+// const a = prompt('Add first number');
+// const b = prompt('Add second number');
+// const sum = parseFloat(a) + parseFloat(b);
+// console.log(sum)
+
+//* problem-07
+//? square root of a number
+// console.log(Math.sqrt(128))
+
+//* problem-08
+//? calculate the area of a triangle
+// const base = 10;
+// const height = 15;
+// const area = (base * height) / 2;
+// console.log(area)
+
+//* problem-09
+//? calculate the area of a triangle using Heron's formula
+// const a = 10;
+// const b = 10;
+// const c = 10;
+// const s = (a + b + c) / 2;
+// const area = Math.sqrt(s*(s - a) * (s - b) * (s - c))
+// console.log(area)
+
+//* problem-10
+//? swapping variables value
+// let a = 5;
+// let b = 10;
+// console.log(a, b)
+//? first way
+// let temp = a;
+// console.log(a, b)
+// a = b;
+// b = temp;
+// console.log(a, b)
+//? second way
+// [b, a] = [a, b];
+// console.log(a, b)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//* hackernoon
+//* problem-06
+//? Print numbers from 1 to 10
+// let i = 0;
+// while(i < 10){
+//     console.log(i)
+//     i++;
+// }
