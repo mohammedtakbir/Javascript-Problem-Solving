@@ -361,11 +361,28 @@
 // }
 
 //* print the table of any user define number
-function table(num){
-    let res = 1;
-    for(let i = 1; i<=10; i++){
-        res = num * i
-        console.log(`${num} X ${i} = ${res}`);
+// function table(num){
+//     let res = 1;
+//     for(let i = 1; i<=10; i++){
+//         res = num * i
+//         console.log(`${num} X ${i} = ${res}`);
+//     }
+// }
+// table(19)
+
+//* find armstrong number
+function armstrong(num) {
+    let temp = num;
+    const numLength = temp.toString().length;
+    let sum = 0;
+    while (temp > 0) {
+        const digit = temp % 10;
+        sum += digit ** numLength;
+        temp = parseInt(temp / 10);
+    };
+    if (num === sum) {
+        return `${num} is an armstrong number`;
+    } else {
+        return `${num} is not an armstrong number`;
     }
 }
-table(19)
