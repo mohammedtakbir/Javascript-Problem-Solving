@@ -267,44 +267,88 @@
 //* problem-18
 //? find the second highest/second lowest number within an array using bangla systems
 //? second highest
-const arr = [35, 45, 15, 25, 85, 65, 47, 38];
-function secondHighest(arr) {
-    let highest = arr[0];
-    let secondHighest = arr[0];
-    for (const num of arr) {
-        if (num > highest) {
-            highest = num;
-        } else if (num > secondHighest && highest > secondHighest) {
-            secondHighest = num;
-        }
-    };
-    return secondHighest;
+// const arr = [35, 45, 15, 25, 85, 65, 47, 38];
+// function secondHighest(arr) {
+//     let highest = arr[0];
+//     let secondHighest = arr[0];
+//     for (const num of arr) {
+//         if (num > highest) {
+//             highest = num;
+//         } else if (num > secondHighest && highest > secondHighest) {
+//             secondHighest = num;
+//         }
+//     };
+//     return secondHighest;
 
-}
-console.log(secondHighest(arr))
+// }
+// console.log(secondHighest(arr))
 
 //? second lowest
-function secondLowest(arr) {
-    let lowest = arr[0];
-    let secondLowest = arr[0];
-    let i = 0;
-    while(i < arr.length){
-        const element = arr[i];
-        if(element < lowest){
-            lowest = element
-        }else if(element < secondLowest && lowest < secondLowest){
-            secondLowest = element
-        }
-        i++;
-    };
-    return secondLowest;
-}
-console.log(secondLowest(arr))
+// function secondLowest(arr) {
+//     let lowest = arr[0];
+//     let secondLowest = arr[0];
+//     let i = 0;
+//     while(i < arr.length){
+//         const element = arr[i];
+//         if(element < lowest){
+//             lowest = element
+//         }else if(element < secondLowest && lowest < secondLowest){
+//             secondLowest = element
+//         }
+//         i++;
+//     };
+//     return secondLowest;
+// }
+// console.log(secondLowest(arr))
 
+//* problem-19
+//? find the largest among three numbers
+// const num1 = 50;
+// const num2 = 7;
+// const num3 = 9;
+// if (num1 > num2 && num1 > num3) {
+//     console.log(`${num1} is bigger`)
+// } else if (num2 > num1 && num2 > num3) {
+//     console.log(`${num2} is bigger`)
+// } else {
+//     console.log(`${num3} is bigger`)
+// }
 
+//* problem-20
+//? find the factorial of a number
+// function factorial(num) {
+//     let fact = 1;
+//     for (let i = num; i >= 1; i--) {
+//         fact *= i;
+//     }
+//     return fact
+// }
+// console.log(factorial(10))
 
+//* problem-21
+//? find the factorial of a number using recursion
+// function recursion(num) {
+//     if (num === 1) {
+//         return num;
+//     }
+//     return num * recursion(num - 1)
+// }
+// console.log(recursion(5))
 
-
+//? another way
+// let factorial = 1;
+// function recursion(num) {
+//     if (num > 17) {
+//         return;
+//     };
+//     let temp = factorial
+//     factorial *= num;
+//     console.log(`${temp} X ${num} = ${factorial}`)
+//     num++;
+//     recursion(num);
+// }
+// recursion(1);
+// console.log(factorial)
 
 
 //* hackernoon
