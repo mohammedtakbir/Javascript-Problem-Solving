@@ -371,18 +371,32 @@
 // table(19)
 
 //* find armstrong number
-function armstrong(num) {
-    let temp = num;
-    const numLength = temp.toString().length;
-    let sum = 0;
-    while (temp > 0) {
-        const digit = temp % 10;
-        sum += digit ** numLength;
-        temp = parseInt(temp / 10);
-    };
-    if (num === sum) {
-        return `${num} is an armstrong number`;
-    } else {
-        return `${num} is not an armstrong number`;
+// function armstrong(num) {
+//     let temp = num;
+//     const numLength = temp.toString().length;
+//     let sum = 0;
+//     while (temp > 0) {
+//         const digit = temp % 10;
+//         sum += digit ** numLength;
+//         temp = parseInt(temp / 10);
+//     };
+//     if (num === sum) {
+//         return `${num} is an armstrong number`;
+//     } else {
+//         return `${num} is not an armstrong number`;
+//     }
+// }
+
+
+//* check if the numbers have same last digit
+
+function findLastDigit(num1, num2, num3) {
+    const digit1 = num1%10;
+    const digit2 = num2%10;
+    const digit3 = num3%10;
+    if(digit1 === digit2 && digit1 === digit3 && digit2 === digit3){
+        console.log('same last digit')
+    }else{
+        console.log('not the same last digit')
     }
 }
