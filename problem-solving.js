@@ -411,13 +411,23 @@
 
 //* problem-26
 //? check the number of occurrences of a string
-function stringCount(string, letter) {
-    let count = 0;
-    for (let i = 0; i < string.length; i++) {
-        if(string[i] === letter){
-            count++;
-        }
-    }
-    console.log(count)
-}
-stringCount('takbir', 'i');
+// function stringCount(string, letter) {
+//     let count = 0;
+//     for (let i = 0; i < string.length; i++) {
+//         if(string[i] === letter){
+//             count++;
+//         }
+//     }
+//     console.log(count)
+// }
+// stringCount('takbir', 'i');
+
+//* problem-27
+//? Check whether a string starts and ends with certain character
+//? endsWith()
+// const file = 'photo.png';
+// console.log(file.endsWith('png')); 
+
+//? startsWith();
+// const user = 'Mohammed Takbir';
+// console.log(user.startsWith('Mohammed'))
