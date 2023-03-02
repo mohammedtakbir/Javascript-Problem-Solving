@@ -402,9 +402,22 @@
 //     const reversedString = splittedString.reverse();
 //     const joinedString = reversedString.join('');
 //     if (string === joinedString) {
-//         console.log(`${string} is a palindrome string`)
+//         console.log(`${string} is a palindrome`)
 //     } else {
-//         console.log(`${string} is not a palindrome string`)
+//         console.log(`${string} is not a palindrome`)
 //     }
 // }
 // palindrome('madam');
+
+//* problem-26
+//? check the number of occurrences of a string
+function stringCount(string, letter) {
+    let count = 0;
+    for (let i = 0; i < string.length; i++) {
+        if(string[i] === letter){
+            count++;
+        }
+    }
+    console.log(count)
+}
+stringCount('takbir', 'i');
