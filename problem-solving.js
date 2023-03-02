@@ -458,19 +458,30 @@
 
 //* problem-31
 //? find armstrong numbers between 1 to 1000
-function armstrong() {
-    for (let i = 1; i <= 1000; i++) {
-        const numLength = i.toString().length;
-        let sum = 0;
-        let temp = i;
-        while (temp > 0) {
-            const digit = temp % 10;
-            sum += digit ** numLength;
-            temp = parseInt(temp / 10)
-        };
-        if (i === sum) {
-            console.log(i)
-        }
+// function armstrong() {
+//     for (let i = 1; i <= 1000; i++) {
+//         const numLength = i.toString().length;
+//         let sum = 0;
+//         let temp = i;
+//         while (temp > 0) {
+//             const digit = temp % 10;
+//             sum += digit ** numLength;
+//             temp = parseInt(temp / 10)
+//         };
+//         if (i === sum) {
+//             console.log(i)
+//         }
+//     }
+// }
+// armstrong();
+
+//* problem-32
+//? find sum of natural numbers using recursion function
+function sumOfNatural(num) {
+    if (num > 0) {
+        return num + sumOfNatural(num - 1)
+    } else {
+        return num;
     }
 }
-armstrong();
+console.log(sumOfNatural(10))
