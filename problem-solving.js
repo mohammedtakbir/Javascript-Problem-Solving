@@ -524,3 +524,11 @@
 //     arr[i] = arr[i - 1] + arr[i - 2]
 // }
 // console.log(arr)
+
+//* problem-35
+//? replace characters of a string
+// const text = 'The quick brown fox jumps over the lazy dog. If the dog reacted, was it really lazy?';
+// console.log(text.replace('dog', 'monkey'));
+// console.log(text.replace(/lazy/gi, 'fast')) //? with regular expression
+// const reg = new RegExp('lazy', 'gi');
+// console.log(text.replace(reg, 'slow'))
