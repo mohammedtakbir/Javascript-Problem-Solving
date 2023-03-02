@@ -477,11 +477,40 @@
 
 //* problem-32
 //? find sum of natural numbers using recursion function
-function sumOfNatural(num) {
-    if (num > 0) {
-        return num + sumOfNatural(num - 1)
-    } else {
-        return num;
+// function sumOfNatural(num) {
+//     if (num > 0) {
+//         return num + sumOfNatural(num - 1)
+//     } else {
+//         return num;
+//     }
+// }
+// console.log(sumOfNatural(10))
+
+//* problem-33
+//? make a single calculator using switch case
+function getInputFieldValue(inputId) {
+    const inputField = document.getElementById(inputId);
+    return inputField.value;
+}
+function calculator() {
+    const num1 = getInputFieldValue('number1-field');
+    const num2 = getInputFieldValue('number2-field');
+    const operation = getInputFieldValue('operation-field');
+
+    switch (operation) {
+        case '+':
+            console.log(parseFloat(num1) + parseFloat(num2));
+            break;
+        case '-':
+            console.log(parseFloat(num1) - parseFloat(num2));
+            break;
+        case '*':
+            console.log(parseFloat(num1) * parseFloat(num2));
+            break;
+        case '/':
+            console.log(parseFloat(num1) / parseFloat(num2));
+            break;
+        default:
+            console.log('Something went wrong');
     }
 }
-console.log(sumOfNatural(10))
