@@ -435,6 +435,12 @@
 //* problem-28
 //? Check whether a string contains a substring using includes() and indexOf()
 //? includes()
-const string = 'lorem ipsum doloe sit amet. astala vista';
+// const string = 'lorem ipsum doloe sit amet. astala vista';
 // console.log(string.includes('VISTa'.toLowerCase())) //? includes()
 // console.log(string.indexOf(' '.toLowerCase())); //? indexOf()
+
+//* problem-29
+//? convert the first letter of a string into uppercase
+const str = 'the quick brown fox jumps over the lazy dog.';
+// console.log(str.charAt(0).toUpperCase() + str.slice(1)).
+// console.log(str.slice(0, str.length - 2) + str.charAt(str.length - 2).toUpperCase() + '.')
