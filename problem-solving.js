@@ -350,17 +350,8 @@
 // recursion(1);
 // console.log(factorial)
 
-
-//* hackernoon
-//* problem-06
-//? Print numbers from 1 to 10
-// let i = 0;
-// while(i < 10){
-//     console.log(i)
-//     i++;
-// }
-
-//* print the table of any user define number
+//* problem-22 
+//? print the table of any user define number
 // function table(num){
 //     let res = 1;
 //     for(let i = 1; i<=10; i++){
@@ -370,7 +361,8 @@
 // }
 // table(19)
 
-//* find armstrong number
+//* problem-23
+//? find armstrong number
 // function armstrong(num) {
 //     let temp = num;
 //     const numLength = temp.toString().length;
@@ -388,15 +380,31 @@
 // }
 
 
-//* check if the numbers have same last digit
+//* problem-24
+//? check if the numbers have same last digit
 
-function findLastDigit(num1, num2, num3) {
-    const digit1 = num1%10;
-    const digit2 = num2%10;
-    const digit3 = num3%10;
-    if(digit1 === digit2 && digit1 === digit3 && digit2 === digit3){
-        console.log('same last digit')
-    }else{
-        console.log('not the same last digit')
-    }
-}
+// function findLastDigit(num1, num2, num3) {
+//     const digit1 = num1%10;
+//     const digit2 = num2%10;
+//     const digit3 = num3%10;
+//     if(digit1 === digit2 && digit1 === digit3 && digit2 === digit3){
+//         console.log('same last digit')
+//     }else{
+//         console.log('not the same last digit')
+//     }
+// }
+
+//* problem-25
+//? check if a string is palindrome or not
+
+// function palindrome(string) {
+//     const splittedString = string.split('');
+//     const reversedString = splittedString.reverse();
+//     const joinedString = reversedString.join('');
+//     if (string === joinedString) {
+//         console.log(`${string} is a palindrome string`)
+//     } else {
+//         console.log(`${string} is not a palindrome string`)
+//     }
+// }
+// palindrome('madam');
