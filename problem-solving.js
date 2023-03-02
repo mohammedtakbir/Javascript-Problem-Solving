@@ -167,26 +167,55 @@
 //* Problem-14
 //? Generate a random number
 
-function generateRandomNumber() {
-    const randomNumbers = Math.round(Math.random() * 1000000000);
-    const randomString = randomNumbers + '';
-    if (randomString.length === 9) {
-        return randomNumbers;
-    } else {
-        return generateRandomNumber();
-    }
-}
+// function generateRandomNumber() {
+//     const randomNumbers = Math.round(Math.random() * 1000000000);
+//     const randomString = randomNumbers + '';
+//     if (randomString.length === 9) {
+//         return randomNumbers;
+//     } else {
+//         return generateRandomNumber();
+//     }
+// }
 
-function displayRandomNumber() {
-    const numbers = generateRandomNumber();
-    const randomField = document.getElementById('random-number');
-    randomField.innerText = '017'+numbers;
-}
+// function displayRandomNumber() {
+//     const numbers = generateRandomNumber();
+//     const randomField = document.getElementById('random-number');
+//     randomField.innerText = '017'+numbers;
+// }
 
+//* problem-15
+//? Check if a number is odd or even
+// function oddEven(num) {
+//     if (num % 2 === 0){
+//         return 'Odd Number';
+//     }else{
+//         return 'Even Numbers'
+//     }
+// }
+// console.log(oddEven(251))
 
-
-
-
+//* problem-16
+//? Check if a number is a prime number or not
+// function checkPrimeNumber(num) {
+//     if (num === 1) {
+//         return `${num} is not a prime number`;
+//     } else if (num < 1) {
+//         return `Negative value cannot be a prime number`;
+//     } else if (num === 2) {
+//         return `${num} is a prime number`;
+//     }
+//     let prime = '';
+//     for (let i = 2; i < num; i++) {
+//         if (num % i === 0) {
+//             prime = `${num} is a not a prime number`;
+//             break;
+//         } else {
+//             prime = `${num} is a prime number`;
+//         }
+//     };
+//     return prime;
+// }
+console.log(checkPrimeNumber(57))
 
 
 
