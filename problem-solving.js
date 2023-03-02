@@ -441,6 +441,17 @@
 
 //* problem-29
 //? convert the first letter of a string into uppercase
-const str = 'the quick brown fox jumps over the lazy dog.';
+// const str = 'the quick brown fox jumps over the lazy dog.';
 // console.log(str.charAt(0).toUpperCase() + str.slice(1)).
 // console.log(str.slice(0, str.length - 2) + str.charAt(str.length - 2).toUpperCase() + '.')
+
+//* problem-30
+//? count number of vowel in a string using Regex
+// const str = 'the quick brown fox jumps over the lazy dog.';
+// const regex = /[aeiou]/gi;
+// const matches = str.match(regex);
+// for(const vowel of matches){
+//     console.log(vowel)
+// };
+// console.log(matches.join(', ').toUpperCase())
+// console.log(matches.length)
