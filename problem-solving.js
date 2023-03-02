@@ -536,7 +536,22 @@
 //* problem-36
 //? Reverse a string using for loop
 // const str = 'takbir';
+// let reverse = '';
 // for (let i = str.length - 1; i >= 0; i--) {
-//     const reverse = str[i];
-//     console.log(reverse)
+//     reverse += str[i];
 // }
+// console.log(reverse)
+
+//* problem-37
+//? sort words in alphabetical order
+// const words = ['Sakib', 'Takbir', 'Tamim', 'Taskin', 'Shanto', 'Afif', 'Riyad', 'Liton'];
+// console.log(words.sort((a, b) => b-a)) //? compare with function on descending way
+// console.log(words.sort((a, b) => a-b)) //? compare with function on ascending way
+// console.log(words.sort()) //? sort the string on normal format 
+
+const string = 'keep it on a level';
+const splittedString = string.split(' ');
+const sortedString = splittedString.sort();
+const alphabeticalString = sortedString.join(' ');
+console.log('Original String: ' + string);
+console.log('alphabetical order sorted :',alphabeticalString)
