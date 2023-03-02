@@ -532,3 +532,11 @@
 // console.log(text.replace(/lazy/gi, 'fast')) //? with regular expression
 // const reg = new RegExp('lazy', 'gi');
 // console.log(text.replace(reg, 'slow'))
+
+//* problem-36
+//? Reverse a string using for loop
+// const str = 'takbir';
+// for (let i = str.length - 1; i >= 0; i--) {
+//     const reverse = str[i];
+//     console.log(reverse)
+// }
