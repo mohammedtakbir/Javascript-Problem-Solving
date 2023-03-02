@@ -488,29 +488,39 @@
 
 //* problem-33
 //? make a single calculator using switch case
-function getInputFieldValue(inputId) {
-    const inputField = document.getElementById(inputId);
-    return inputField.value;
-}
-function calculator() {
-    const num1 = getInputFieldValue('number1-field');
-    const num2 = getInputFieldValue('number2-field');
-    const operation = getInputFieldValue('operation-field');
+// function getInputFieldValue(inputId) {
+//     const inputField = document.getElementById(inputId);
+//     return inputField.value;
+// }
+// function calculator() {
+//     const num1 = getInputFieldValue('number1-field');
+//     const num2 = getInputFieldValue('number2-field');
+//     const operation = getInputFieldValue('operation-field');
 
-    switch (operation) {
-        case '+':
-            console.log(parseFloat(num1) + parseFloat(num2));
-            break;
-        case '-':
-            console.log(parseFloat(num1) - parseFloat(num2));
-            break;
-        case '*':
-            console.log(parseFloat(num1) * parseFloat(num2));
-            break;
-        case '/':
-            console.log(parseFloat(num1) / parseFloat(num2));
-            break;
-        default:
-            console.log('Something went wrong');
-    }
-}
+//     switch (operation) {
+//         case '+':
+//             console.log(parseFloat(num1) + parseFloat(num2));
+//             break;
+//         case '-':
+//             console.log(parseFloat(num1) - parseFloat(num2));
+//             break;
+//         case '*':
+//             console.log(parseFloat(num1) * parseFloat(num2));
+//             break;
+//         case '/':
+//             console.log(parseFloat(num1) / parseFloat(num2));
+//             break;
+//         default:
+//             console.log('Something went wrong');
+//     }
+// }
+
+//* problem-34
+//? print fibonacci sequence
+//* 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144
+
+// const arr = [0, 1];
+// for (let i = 2; i < 14; i++) {
+//     arr[i] = arr[i - 1] + arr[i - 2]
+// }
+// console.log(arr)
