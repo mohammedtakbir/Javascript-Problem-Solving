@@ -359,3 +359,13 @@
 //     console.log(i)
 //     i++;
 // }
+
+//* print the table of any user define number
+function table(num){
+    let res = 1;
+    for(let i = 1; i<=10; i++){
+        res = num * i
+        console.log(`${num} X ${i} = ${res}`);
+    }
+}
+table(19)
