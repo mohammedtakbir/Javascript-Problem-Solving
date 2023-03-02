@@ -431,3 +431,10 @@
 //? startsWith();
 // const user = 'Mohammed Takbir';
 // console.log(user.startsWith('Mohammed'))
+
+//* problem-28
+//? Check whether a string contains a substring using includes() and indexOf()
+//? includes()
+const string = 'lorem ipsum doloe sit amet. astala vista';
+// console.log(string.includes('VISTa'.toLowerCase())) //? includes()
+// console.log(string.indexOf(' '.toLowerCase())); //? indexOf()
