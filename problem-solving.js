@@ -455,3 +455,22 @@
 // };
 // console.log(matches.join(', ').toUpperCase())
 // console.log(matches.length)
+
+//* problem-31
+//? find armstrong numbers between 1 to 1000
+function armstrong() {
+    for (let i = 1; i <= 1000; i++) {
+        const numLength = i.toString().length;
+        let sum = 0;
+        let temp = i;
+        while (temp > 0) {
+            const digit = temp % 10;
+            sum += digit ** numLength;
+            temp = parseInt(temp / 10)
+        };
+        if (i === sum) {
+            console.log(i)
+        }
+    }
+}
+armstrong();
