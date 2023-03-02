@@ -215,11 +215,91 @@
 //     };
 //     return prime;
 // }
-console.log(checkPrimeNumber(57))
+// console.log(checkPrimeNumber(57))
+
+//* problem-17
+//? find the highest/lowest number within an array using Math.max()/ Math.min()
+// const arr = [35, 45, 15, 25, 85, 65, 47, 38];
+// console.log(Math.max(...arr))
+// console.log(Math.min(...arr))
+
+//? find the highest/lowest number within an array using array sort()
+
+// const lowest = arr.sort((a, b) => a - b);
+// console.log(lowest[0])
+// console.log(lowest[1]) //? second lowest
+
+// const highest = arr.sort((a, b) => b-a);
+// console.log(highest[0])
+// console.log(highest[1]) //? second highest
 
 
+//? find the highest/lowest number within an array using bangla systems
+//? highest
+// function highest(num){
+//     let i = 0;
+//     let highest = num[0];
+//     while(i<num.length){
+//         const number = num[i];
+//         if(number > highest){
+//             highest = number
+//         }
+//         i++;
+//     };
+//     return highest;
+// }
+// console.log(highest(arr))
 
 
+//? lowest
+// function lowest(num){
+//     let lowest = num[0];
+//     for(let i = 0; i < num.length; i++){
+//         const number = num[i];
+//         if(number < lowest){
+//             lowest = number
+//         }
+//     }
+//     return lowest;
+// };
+// console.log(lowest(arr))
+
+//* problem-18
+//? find the second highest/second lowest number within an array using bangla systems
+//? second highest
+const arr = [35, 45, 15, 25, 85, 65, 47, 38];
+function secondHighest(arr) {
+    let highest = arr[0];
+    let secondHighest = arr[0];
+    for (const num of arr) {
+        if (num > highest) {
+            highest = num;
+        } else if (num > secondHighest && highest > secondHighest) {
+            secondHighest = num;
+        }
+    };
+    return secondHighest;
+
+}
+console.log(secondHighest(arr))
+
+//? second lowest
+function secondLowest(arr) {
+    let lowest = arr[0];
+    let secondLowest = arr[0];
+    let i = 0;
+    while(i < arr.length){
+        const element = arr[i];
+        if(element < lowest){
+            lowest = element
+        }else if(element < secondLowest && lowest < secondLowest){
+            secondLowest = element
+        }
+        i++;
+    };
+    return secondLowest;
+}
+console.log(secondLowest(arr))
 
 
 
